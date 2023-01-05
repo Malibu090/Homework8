@@ -20,7 +20,7 @@ void MinSumOfRowElements(int[,] matrix, out int minSumRow)
         {
             sum += matrix[i, j];
         }
-        Console.WriteLine("сумма строки " + (i + 1) + " равна " + sum);
+        Console.WriteLine("the sum of row " + (i + 1) + " is equal to " + sum);
         if (i == 0)
         {
             minSum = sum;
@@ -76,4 +76,4 @@ int[,] matrix = CreateArrayWithRandomNumbers(rows, columns, leftRange, rightRang
 OutputArray(matrix);
 // посчитать сумму элементов в каждой строке и выдать номер строки с наименьшей суммой элементов
 MinSumOfRowElements(matrix, out int minSumRow);
-System.Console.WriteLine(minSumRow + " строка - строка с минимальной суммой элементов");
+System.Console.WriteLine(minSumRow + " string - a string with the minimum sum of elements");
